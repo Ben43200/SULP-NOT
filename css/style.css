@@ -70,7 +70,63 @@ margin: 0;
   margin: 6px 0;
 }
 
-.close {
-  color: red;
-  display: none;
+@media only screen and (min-width: 768px) {
+  .close {
+    color: red;
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+  .sidenav {
+    width: 100%;
+    left: 0;
+  }
+  #closeBtn {
+    display: none;
+  }
+}
+nav ul {
+  list-style-type: none;
+}
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  font-size: 120%;
+}
+
+nav a:hover {
+  color: orange;
+  border-bottom: 2px solid gold;
+}
+
+nav > ul li:hover .sous {
+  display: block;
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+
+.sous li {
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+
+.sous a {
+  padding: 10px;
+}
+
+.sous a:hover {
+  border-bottom: none;
+  background-color: rgba(200, 200, 200, 0.1);
+}
+
+.deroulant > a::after {
+  content: "";
+  font-size: 12px;
 }/*# sourceMappingURL=style.css.map */
