@@ -4,14 +4,15 @@ body {
 }
 
 .sidenav {
-  width: 170px;
+  /* height: 500px; */
+  width: 100%;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: -170px;
-  background-color: #e8e8e8;
+  top: -500px;
+  /* left: -170px; */
   padding-top: 60px;
-  transition: left 0.5s ease;
+  transition: top 0.5s ease;
 }
 
 /* Sidenav menu links */
@@ -48,7 +49,7 @@ margin: 0;
 
 /* Active class */
 .sidenav.active {
-  left: 0;
+  top: 0;
 }
 
 /* Close btn */
@@ -68,6 +69,11 @@ margin: 0;
   height: 5px;
   background-color: black;
   margin: 6px 0;
+}
+@media only screen and (min-width: 768px) {
+  .burger-icon span {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
