@@ -3,137 +3,154 @@ body {
   background-color: beige;
 }
 
-.sidenav {
-  /* height: 500px; */
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  top: -500px;
-  /* left: -170px; */
-  padding-top: 60px;
-  transition: top 0.5s ease;
-}
+@media only screen and (max-width: 767px) {
+  .sidenav {
+    width: 170px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -170px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  /* 
+  .menu >li >ul {
+  color: red
+  }
 
-/* Sidenav menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-}
-
-/* 
-.menu >li >ul {
-color: red
-}
-
-.menu {
-color: blue; 
-} */
-.sidenav a:hover {
-  color: #111;
-}
-
-/* .sidenav > menu {
-list-style-type: none;
-padding: 0;
-margin: 0;
-} */
-.sidenav ul {
+  .menu {
+  color: blue; 
+  } */
+  .sidenav a:hover {
+    color: #111;
+  }
+  /* .sidenav > menu {
   list-style-type: none;
   padding: 0;
   margin: 0;
-}
-
-/* Active class */
-.sidenav.active {
-  top: 0;
-}
-
-/* Close btn */
-.sidenav .close {
-  position: absolute;
-  top: 0;
-  font-size: 56px;
-  right: 10px;
-  color: #e26a8d;
-  font-weight: 900;
-}
-
-/* Icône burger */
-.burger-icon span {
-  display: block;
-  width: 35px;
-  height: 5px;
-  background-color: black;
-  margin: 6px 0;
-}
-@media only screen and (min-width: 768px) {
-  .burger-icon span {
-    display: none;
+  } */
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
   }
-}
-
-@media only screen and (min-width: 768px) {
-  .close {
-    color: red;
-    display: none;
-  }
-  .menu {
-    display: flex;
-    justify-content: space-around;
-  }
-  .sidenav {
-    width: 100%;
+  /* Active class */
+  .sidenav.active {
     left: 0;
   }
-  #closeBtn {
-    display: none;
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    font-size: 56px;
+    right: 10px;
+    color: #e26a8d;
+    font-weight: 900;
+  }
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
   }
 }
-nav ul {
+.close {
+  color: red;
+  display: none;
+}
+
+.menu {
+  flex-direction: column;
+  z-index: 1;
+  position: fixed;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+  }
+}
+
+.menu ul {
+  display: none;
+}
+
+.menu,
+.menu ul {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
 }
 
-nav {
-  width: 100%;
-  margin: 0 auto;
-  background-color: white;
-  position: sticky;
-  top: 0px;
-  font-size: 120%;
-}
-
-nav a:hover {
-  color: orange;
-  border-bottom: 2px solid gold;
-}
-
-nav > ul li:hover .sous {
-  display: block;
-  width: 25%;
+.menu a {
+  display: flex;
+  width: 165px;
+  height: 35px;
+  color: black;
+  border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
+  border: 0.1vw #fae800 solid;
+  font-weight: bold;
+  font-size: 0.9rem;
+  align-items: center;
+  box-sizing: content-box;
+  text-decoration: none;
+  padding: 3px 0px;
+  justify-content: center;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .menu a {
+    width: 100%;
+  }
+}
+.menu a:hover {
+  background-color: #5aabdf;
+}
+
+.menu > li > ul > li > a {
+  padding: 3px 10px;
+}
+
+.menu li {
+  margin: 3px;
+  width: 100%;
+}
+
+.menu > li {
+  display: flex;
   position: relative;
 }
 
-.sous li {
-  float: none;
-  width: 100%;
-  text-align: left;
+.menu li:hover ul {
+  display: block;
+  /* position: absolute; */
+  top: 15px;
+  left: 165px;
+  z-index: 100;
+  position: fixed;
+}
+@media screen and (min-width: 768px) {
+  .menu li:hover ul {
+    left: 0px;
+    position: absolute;
+    top: 41px;
+  }
 }
 
-.sous a {
-  padding: 10px;
-}
-
-.sous a:hover {
-  border-bottom: none;
-  background-color: rgba(200, 200, 200, 0.1);
-}
-
-.deroulant > a::after {
-  content: "";
-  font-size: 12px;
+.menu ul li a:hover {
+  background-color: #5aabdf;
+  border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
 }/*# sourceMappingURL=style.css.map */
