@@ -1,9 +1,45 @@
 @import "./mixinsandfunctions.scss";
 
+* {
+  @include reset;
+}
 body {
   background-color: beige;
 }
 
+body {
+  display: grid;
+  grid-template-areas:
+    " header "
+    /* ". heading ." */
+    "main "
+    " footer ";
+
+  font-family: "Times New Roman", Times, serif;
+  row-gap: 20px;
+  grid-template-rows: 10rem auto 2rem;
+  grid-template-columns: auto;
+  height: 100vh;
+  // background-color: red;
+  @include media(tablet) {
+    grid-template-columns: auto 1240px auto;
+    grid-template-areas:
+      ". header ."
+      /* ". heading ." */
+      ". main ."
+      ". footer .";
+  }
+}
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
 // .sidenav {
 //   // height: 100%;
 //   //   width: 170px;
