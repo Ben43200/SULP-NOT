@@ -262,6 +262,11 @@ footer {
 .menu > li > ul > li > a {
   padding: 3px 10px;
 }
+@media screen and (min-width: 768px) {
+  .menu > li > ul > li > a {
+    padding: 3px 35px;
+  }
+}
 
 .menu li {
   width: 100%;

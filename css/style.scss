@@ -393,6 +393,9 @@ margin: 0;
 //ciblage uniquement des liens dans les sous menus
 .menu > li > ul > li > a {
   padding: 3px 10px;
+  @include media(tablet) {
+    padding: 3px 35px;
+  }
 }
 // .menu > li > ul > li > a {
 //   // background-color: #5aabdf;
