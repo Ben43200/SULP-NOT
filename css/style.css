@@ -110,7 +110,7 @@ body {
 
 body {
   display: grid;
-  grid-template-areas: " header " "main " " footer ";
+  grid-template-areas: " header " " main " " footer ";
   font-family: "Times New Roman", Times, serif;
   row-gap: 20px;
   grid-template-rows: 10rem auto 2rem;
@@ -126,6 +126,7 @@ body {
 
 header {
   grid-area: header;
+  border: 2px solid black;
 }
 
 main {

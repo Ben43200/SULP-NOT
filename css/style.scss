@@ -12,7 +12,7 @@ body {
   grid-template-areas:
     " header "
     /* ". heading ." */
-    "main "
+    " main "
     " footer ";
 
   font-family: "Times New Roman", Times, serif;
@@ -32,6 +32,7 @@ body {
 }
 header {
   grid-area: header;
+  border: 2px solid black;
 }
 main {
   grid-area: main;
@@ -40,6 +41,10 @@ main {
 footer {
   grid-area: footer;
 }
+
+// nav {
+//   display: flex;
+// }
 // .sidenav {
 //   // height: 100%;
 //   //   width: 170px;
