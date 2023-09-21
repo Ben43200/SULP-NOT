@@ -247,13 +247,16 @@ footer {
   justify-content: center;
   text-align: center;
 }
+.menu a:hover {
+  background-color: #0069b5;
+}
 @media screen and (min-width: 768px) {
   .menu a {
     width: 100%;
   }
 }
 .menu a:hover {
-  background-color: #5aabdf;
+  background-color: #0069b5;
 }
 
 .menu > li > ul > li > a {
@@ -261,19 +264,24 @@ footer {
 }
 
 .menu li {
-  margin: 3px;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .menu li {
+    margin: 3px;
+  }
 }
 
 .menu > li {
   display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu li:hover ul {
   display: block;
   /* position: absolute; */
-  top: 15px;
   left: 165px;
   z-index: 100;
   position: fixed;
