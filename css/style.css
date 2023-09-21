@@ -128,6 +128,14 @@ header {
   grid-area: header;
   border: 2px solid black;
 }
+@media screen and (min-width: 768px) {
+  header {
+    display: grid;
+    grid-template-rows: 5rem 5rem;
+    grid-template-areas: " . " " nav ";
+    align-items: end;
+  }
+}
 
 main {
   grid-area: main;
@@ -135,6 +143,10 @@ main {
 
 footer {
   grid-area: footer;
+}
+
+nav {
+  grid-area: nav;
 }
 
 @media only screen and (max-width: 767px) {

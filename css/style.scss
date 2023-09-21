@@ -33,6 +33,20 @@ body {
 header {
   grid-area: header;
   border: 2px solid black;
+  @include media(tablet) {
+    // grid-template-columns: auto 1240px auto;
+    display: grid;
+    grid-template-rows: 5rem 5rem;
+    grid-template-areas:
+      // ". logo ."
+      // /* ". heading ." */
+      // ". nav .";
+
+      " . "
+      /* ". heading ." */
+      " nav ";
+    align-items: end;
+  }
 }
 main {
   grid-area: main;
@@ -42,9 +56,9 @@ footer {
   grid-area: footer;
 }
 
-// nav {
-//   display: flex;
-// }
+nav {
+  grid-area: nav;
+}
 // .sidenav {
 //   // height: 100%;
 //   //   width: 170px;
