@@ -1,18 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <script src="./js/script.js" defer></script>
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-    <nav>
-        <div id="mySidenav" class="sidenav">
+      <nav>
+        <div class="ie-fix">
+          <div class="wrapper">
+            <input id="hamburger" type="checkbox" class="hamburger-checkbox" />
+            <label
+              for="hamburger"
+              class="hamburger-label"
+              role="button"
+              aria-labelledby="menu"
+              >&#xf0c9;</label
+            >
+
+            <nav role="navigation" class="sidebar">
+              <!-- <ul class="menu">
+                <li>Home</li>
+                <li>Publications</li>
+                <li>Shop</li>
+                <li>Your Account</li>
+                <li>Contact Us</li>
+              </ul> -->
+              <ul class="menu">
+                <li><a href="#"> Accueil </a></li>
+                <li><a href="#">Office</a></li>
+                <li class="deroulant">
+                  <a href="#">Compétences</a>
+                  <ul class="sous">
+                    <li><a href="#">Droit Immobilier</a></li>
+                    <li><a href="#">Droit de la Famille</a></li>
+                    <li><a href="#">Droit des Affaires</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Liens utiles</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+
+            <main role="main" class="content">
+              <h1>Pure CSS off-canvas menu with flexbox, fixed for IE</h1>
+              <p>
+                This page uses
+                <a href="http://caniuse.com/#feat=flexbox">flexbox</a> to
+                control the layout so that when the menu becomes visible, the
+                content area can resize to fit the remaining width in the
+                viewport, instead of overflowing the viewport and getting cut
+                off on the right side, as happens with most off-canvas menus.
+              </p>
+              <p>
+                The menu's visibility is toggled without JavaScript using the
+                <a href="https://css-tricks.com/the-checkbox-hack/"
+                  >checkbox hack</a
+                >.
+              </p>
+            </main>
+          </div>
+        </div>
+        <!-- <div id="mySidenav" class="sidenav">
             <a id="closeBtn" href="#" class="close">×</a>
                 <ul class="menu">
                     <li><a href="#"> Accueil </a></li>
@@ -27,19 +80,17 @@
                     <li><a href="#">Liens utiles</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-</div>
-</nav>
+</div> -->
+      </nav>
 
-<a href="#" id="openBtn">
+      <!-- <a href="#" id="openBtn">
   <span class="burger-icon">
     <span></span>
     <span></span>
     <span></span>
-</a>
-</header>
-<main><h1>Test</h1></main>
-<footer><p>Paragraphe</p></footer>
-
-</body>
-
+</a> -->
+    </header>
+    <main><h1>Test</h1></main>
+    <footer><p>Paragraphe</p></footer>
+  </body>
 </html>
