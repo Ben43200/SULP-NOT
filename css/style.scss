@@ -583,11 +583,14 @@ body {
 
 .hamburger-checkbox:checked ~ .sidebar {
   width: auto;
-  min-height: 100vh;
+  // min-height: 100vh;
   padding-top: 6.5em;
   @include media(tablet) {
     min-width: 100vw;
     height: auto;
+    height: 0rem;
+    padding-bottom: 3em;
+    padding-top: 0;
   }
   // }
 
