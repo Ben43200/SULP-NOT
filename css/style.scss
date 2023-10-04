@@ -45,7 +45,7 @@ header {
       " . "
       /* ". heading ." */
       " nav ";
-    align-items: end;
+    // align-items: end;
   }
 }
 main {
@@ -447,51 +447,52 @@ nav {
 // }
 // }
 // }
-.menu > li {
-  // display: flex;
-  // position: relative;
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
 
-//effet et layout du menu au survol
-// .menu li:hover ul {
-//     display: block;
-//     position: absolute;
-//     top: 41px;
-//     // left: 0px;
-//     left: 165px;
-
-//     z-index: 100;
-//     @include media(tablet) {
-//         // left: 165px;
-//         left: 0px;
-//     }
+// .menu > li {
+//   // display: flex;
+//   // position: relative;
+//   display: flex;
+//   position: relative;
+//   justify-content: center;
+//   align-items: center;
 // }
 
-.menu li:hover ul {
-  display: block;
-  /* position: absolute; */
-  // top: 41px;
-  // top: 103.2px;
-  left: 165px;
-  z-index: 100;
-  position: fixed;
-  @include media(tablet) {
-    // left: 165px;
-    left: 0px;
-    position: absolute;
-    top: 41px;
-  }
-  // }
-}
+// //effet et layout du menu au survol
+// // .menu li:hover ul {
+// //     display: block;
+// //     position: absolute;
+// //     top: 41px;
+// //     // left: 0px;
+// //     left: 165px;
 
-.menu ul li a:hover {
-  background-color: #5aabdf;
-  border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
-}
+// //     z-index: 100;
+// //     @include media(tablet) {
+// //         // left: 165px;
+// //         left: 0px;
+// //     }
+// // }
+
+// .menu li:hover ul {
+//   display: block;
+//   /* position: absolute; */
+//   // top: 41px;
+//   // top: 103.2px;
+//   left: 165px;
+//   z-index: 100;
+//   position: fixed;
+//   @include media(tablet) {
+//     // left: 165px;
+//     left: 0px;
+//     position: absolute;
+//     top: 41px;
+//   }
+//   // }
+// }
+
+// .menu ul li a:hover {
+//   background-color: #5aabdf;
+//   border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
+// }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
@@ -584,22 +585,33 @@ body {
   width: auto;
   min-height: 100vh;
   padding-top: 6.5em;
-}
+  @include media(tablet) {
+    min-width: 100vw;
+    height: auto;
+  }
+  // }
 
-.menu {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-
-  li {
+  .menu {
+    list-style: none;
     display: flex;
-    align-items: center;
-    flex: 1 0 auto;
-    padding: $rhythm ($rhythm * 2);
-    border-top: 1px solid darken($dark, 10%);
+    flex-direction: column;
+    @include media(tablet) {
+      flex-direction: row;
+    }
 
-    &:last-child {
-      border-bottom: 1px solid darken($dark, 10%);
+    li {
+      display: flex;
+      align-items: center;
+      flex: 1 0 auto;
+      padding: $rhythm ($rhythm * 2);
+      border-top: 1px solid darken($dark, 10%);
+      @include media(tablet) {
+        align-self: flex-start;
+      }
+
+      &:last-child {
+        border-bottom: 1px solid darken($dark, 10%);
+      }
     }
   }
 }
@@ -631,4 +643,8 @@ a {
 .sous:hover {
   display: flex;
   flex-direction: column;
+}
+
+li > a {
+  color: red;
 }

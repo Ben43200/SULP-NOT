@@ -134,7 +134,6 @@ header {
     display: grid;
     grid-template-rows: 5rem 5rem;
     grid-template-areas: " . " " nav ";
-    align-items: end;
   }
 }
 
@@ -148,33 +147,6 @@ footer {
 
 nav {
   grid-area: nav;
-}
-
-.menu > li {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu li:hover ul {
-  display: block;
-  /* position: absolute; */
-  left: 165px;
-  z-index: 100;
-  position: fixed;
-}
-@media screen and (min-width: 768px) {
-  .menu li:hover ul {
-    left: 0px;
-    position: absolute;
-    top: 41px;
-  }
-}
-
-.menu ul li a:hover {
-  background-color: #5aabdf;
-  border-color: #9ea9d4 #c90052 #c90052 #9ea9d4;
 }
 
 * {
@@ -254,20 +226,35 @@ body {
   min-height: 100vh;
   padding-top: 6.5em;
 }
-
-.menu {
+@media screen and (min-width: 768px) {
+  .hamburger-checkbox:checked ~ .sidebar {
+    min-width: 100vw;
+    height: auto;
+  }
+}
+.hamburger-checkbox:checked ~ .sidebar .menu {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-.menu li {
+@media screen and (min-width: 768px) {
+  .hamburger-checkbox:checked ~ .sidebar .menu {
+    flex-direction: row;
+  }
+}
+.hamburger-checkbox:checked ~ .sidebar .menu li {
   display: flex;
   align-items: center;
   flex: 1 0 auto;
   padding: 16px 32px;
   border-top: 1px solid #2b2b2b;
 }
-.menu li:last-child {
+@media screen and (min-width: 768px) {
+  .hamburger-checkbox:checked ~ .sidebar .menu li {
+    align-self: flex-start;
+  }
+}
+.hamburger-checkbox:checked ~ .sidebar .menu li:last-child {
   border-bottom: 1px solid #2b2b2b;
 }
 
@@ -301,4 +288,8 @@ a {
 .sous:hover {
   display: flex;
   flex-direction: column;
+}
+
+li > a {
+  color: red;
 }/*# sourceMappingURL=style.css.map */
