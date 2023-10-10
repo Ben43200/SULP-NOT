@@ -511,7 +511,7 @@ $rhythm: 16px;
 html,
 body {
   // height: 100vh;
-  background: red;
+  // background: red;
 }
 
 .ie-fix {
@@ -559,6 +559,10 @@ body {
   font: 42px/42px fontawesome;
   text-align: center;
   color: $light;
+  @include media(tablet) {
+    color: #444;
+    background-color: beige;
+  }
 }
 
 .content {
@@ -569,6 +573,11 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 1);
   transition: all 0.3s;
   min-height: 100vh;
+  @include media(tablet) {
+    // min-width: 100vw;
+    background: $light;
+    color: $dark;
+  }
 }
 
 .sidebar {
@@ -579,12 +588,21 @@ body {
   color: $light;
   transition: all 0.3s;
   display: flex;
+  @include media(tablet) {
+    // min-width: 100vw;
+    // background: $light;
+    background: $dark;
+
+    color: $light;
+    // height: 50px;
+  }
 }
 
 .hamburger-checkbox:checked ~ .sidebar {
   width: auto;
   // min-height: 100vh;
   padding-top: 6.5em;
+  color: #444;
   @include media(tablet) {
     min-width: 100vw;
     height: auto;
