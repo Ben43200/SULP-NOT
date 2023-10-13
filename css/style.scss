@@ -435,6 +435,24 @@
 @media screen and (max-width: 600px) {
   .topnav .dropbtn {
     display: block;
+    // display: none;
     float: none;
+  }
+}
+
+// .topnav .dropbtn {
+//   // color: red;
+//   display: none;
+// }
+
+.topnav.responsive .dropbtn {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  // .topnav a:not(:first-child),
+  // .dropdown .dropbtn,
+  .dropdown2 .dropbtn {
+    display: none;
   }
 }

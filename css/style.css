@@ -186,4 +186,13 @@
     display: block;
     float: none;
   }
+}
+.topnav.responsive .dropbtn {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown2 .dropbtn {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
