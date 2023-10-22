@@ -472,6 +472,9 @@ $n: 5; /* number of images*/
   display: grid;
   overflow: hidden;
   width: 380px;
+  @include media(tablet) {
+    width: 700px;
+  }
   -webkit-mask: linear-gradient(90deg, #0000, #000 10% 90%, #0000);
 }
 .gallery > img {
