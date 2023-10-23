@@ -284,7 +284,8 @@
 $n: 5; /* number of images*/
 
 .gallery {
-  --d: 10s; /* duration */
+  // --d: 10s; /* duration */
+  --d: 20s; /* duration */
 
   display: grid;
   overflow: hidden;

@@ -203,7 +203,7 @@
 
 /* number of images*/
 .gallery {
-  --d: 10s; /* duration */
+  --d: 20s; /* duration */
   display: grid;
   overflow: hidden;
   width: 380px;
