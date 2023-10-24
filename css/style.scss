@@ -412,6 +412,7 @@ $n: 5; /* number of images*/
   /* position: relative; */
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
