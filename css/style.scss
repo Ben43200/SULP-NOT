@@ -71,6 +71,7 @@
   /* background-color: #0069B6; */
   // background-color: #2D2F8C;
   background-color: #0058a9;
+  margin-bottom: 20px;
 }
 
 /* Style the links inside the navigation bar */
@@ -416,4 +417,16 @@ $n: 5; /* number of images*/
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown3:hover .dropbtn3 {
   background-color: #3e8e41;
+}
+
+@media screen and (max-width: 600px) {
+  .dropdown3 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .dropdown2 {
+    display: none;
+  }
 }
