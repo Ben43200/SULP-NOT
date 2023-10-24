@@ -404,7 +404,12 @@
   position: relative;
   display: inline-block;
 }
+@media screen and (max-width: 600px) {
+.dropdown3{
+  display: none;
+}
 
+}
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content3 {
   display: none;
@@ -437,9 +442,18 @@
   /* position: relative; */
   display: flex;
   flex-direction: column;
+  position: fixed;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown3:hover .dropbtn3 {
   background-color: #3e8e41;
 }/*# sourceMappingURL=style.css.map */
+
+
+
+@media screen and (min-width: 600px) {
+.dropdown2 {
+  display: none;
+}
+}
