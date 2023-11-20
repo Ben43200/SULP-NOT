@@ -1,86 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./Ekklesia-web.png" rel="shortcut icon" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://kit.fontawesome.com/a528402c70.js" crossorigin="anonymous"></script>
-    <link href="/css/style.css" rel="stylesheet" />
-    <script src="./js/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a528402c70.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <title>Ekklesia Web</title>
   </head>
   <body>
-    <!-- <div class="topnav" id="myTopnav">
-      <!-- <a href="#home" class="active">Home</a> -->
-    <!-- <ul class="menu"> -->
-    <!-- <ul> -->
-    <!-- <li><a href="#"> Accueil </a></li> -->
+    <header>
+      <nav>
+        <div class="wrapper">
+          <div class="logo">
+            <a href="#"
+              ><img src="./Ekklesia-web.png" class="logo" alt="bible"
+            /></a>
+          </div>
+          <input type="radio" name="slider" id="menu-btn" />
+          <input type="radio" name="slider" id="close-btn" />
+          <ul class="nav-links">
+            <li>
+              <label for="close-btn" class="btn close-btn"
+                ><i class="fas fa-times"></i
+              ></label>
+            </li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="prestations.html">Nos prestations</a></li>
 
-    <!-- 
-      <a href="#">Office</a>
-       <li class="deroulant"> 
-      <ul>
-        <a href="#">Compétences</a>
-        <!-- <ul class="sous">--
-        <li><a href="#">Droit Immobilier</a></li>
-        <li><a href="#">Droit de la Famille</a></li>
-        <li><a href="#">Droit des Affaires</a></li>
-      </ul>
-      <!-- </li> --
-      <a href="#">Liens utiles</a>
-      <a href="#">Contact</a> -->
-    <!-- <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a> -->
-    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a> -->
-    <!-- </ul> -->
-    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div> -->
-    <!-- <div class="logo-container">
-      <img src="./assets/images/logo.png" alt="logo-Sulpice" />
-      <img
-        src="./assets/images/notaire-de-fance-logo-777C89063C-seeklogo.com.png"
-        alt="logo-notaire"
-      />
-    </div> -->
-    <div class="topnav" id="myTopnav">
-      <a href="#home" class="active"><i class="fas fa-home"></i></a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
-      <a href="#">Link 1</a>
-      <div class="dropdown2">
-        <button onclick="myFunction2()" class="dropbtn">Dropdown</button>
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+            <li>
+              <a href="#" class="desktop-item">Dropdown Menu</a>
+              <input type="checkbox" id="showDrop" />
+              <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+              <ul class="drop-menu">
+                <li><a href="#">Drop menu 1</a></li>
+                <li><a href="#">Drop menu 2</a></li>
+                <li><a href="#">Drop menu 3</a></li>
+                <li><a href="#">Drop menu 4</a></li>
+              </ul>
+            </li>
+            <!-- <li>
+              <a href="#" class="desktop-item">Mega Menu</a>
+              <input type="checkbox" id="showMega" />
+              <label for="showMega" class="mobile-item">Mega Menu</label>
+              <div class="mega-box">
+                <div class="content">
+                  <div class="row">
+                    <img
+                      src="https://fadzrinmadu.github.io/hosted-assets/responsive-mega-menu-and-dropdown-menu-using-only-html-and-css/img.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="row">
+                    <header>Design Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Graphics</a></li>
+                      <li><a href="#">Vectors</a></li>
+                      <li><a href="#">Business cards</a></li>
+                      <li><a href="#">Custom logo</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Email Services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Personal Email</a></li>
+                      <li><a href="#">Business Email</a></li>
+                      <li><a href="#">Mobile Email</a></li>
+                      <li><a href="#">Web Marketing</a></li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <header>Security services</header>
+                    <ul class="mega-links">
+                      <li><a href="#">Site Seal</a></li>
+                      <li><a href="#">VPS Hosting</a></li>
+                      <li><a href="#">Privacy Seal</a></li>
+                      <li><a href="#">Website design</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li> -->
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"
+            ><i class="fas fa-bars"></i
+          ></label>
         </div>
-      </div>
-      <div class="dropdown3">
-        <button class="dropbtn3">Dropdown</button>
-        <div class="dropdown-content3">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-      </div>
-
-      <a href="#about">About</a>
-  
-      <a
-        href="javascript:void(0);"
-        style="font-size: 15px"
-        class="icon"
-        onclick="myFunction()"
-        >&#9776;</a
-      >
-
-    </div>
+      </nav>
     <div class="logo-container">
       <img src="./assets/images/logo.png" alt="logo-Sulpice" />
       <img
