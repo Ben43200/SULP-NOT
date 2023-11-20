@@ -624,7 +624,6 @@ body {
 .logo-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   grid-area: logo;
 }
 
