@@ -167,32 +167,32 @@ nav {
   // overflow: hidden;
   margin: 0;
   padding: 0;
-
+  background-color: #164f9d;
   // background: #242526;
-  background: #4054b2;
+  // background: #4054b2;
   background-size: 100% 100%;
   width: 100%;
   border-radius: 0px 0px 10px 10px;
-  @media only screen and (min-width: 415px) {
-    // position: relative;
-    // width: 1240px;
-    // width: 100%;
+  // @media only screen and (min-width: 415px) {
+  //   // position: relative;
+  //   // width: 1240px;
+  //   // width: 100%;
 
-    background-image: linear-gradient(
-      85deg,
-      #352361 1%,
-      rgba(64, 84, 178, 1) 55%
-    );
-  }
-  -webkit-background-clip: border-box;
+  //   background-image: linear-gradient(
+  //     85deg,
+  //     #352361 1%,
+  //     rgba(64, 84, 178, 1) 55%
+  //   );
+  // }
+  // -webkit-background-clip: border-box;
   @include media(desktop) {
     // position: relative;
     width: 1240px;
-    background-image: linear-gradient(
-      85deg,
-      #352361 1%,
-      rgba(64, 84, 178, 1) 55%
-    );
+    //   background-image: linear-gradient(
+    //     85deg,
+    //     #352361 1%,
+    //     rgba(64, 84, 178, 1) 55%
+    //   );
   }
 }
 nav .wrapper {
@@ -335,7 +335,8 @@ nav .wrapper {
     left: -100%;
     // background: #242526;
     // background: #4054b2;
-    background: linear-gradient(85deg, #352361 1%, rgba(64, 84, 178, 1) 55%);
+    // background: linear-gradient(85deg, #352361 1%, rgba(64, 84, 178, 1) 55%);
+    background-color: #164f9d;
 
     display: block;
     padding: 50px 10px;
