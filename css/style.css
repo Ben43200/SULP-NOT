@@ -625,6 +625,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-area: logo;
 }
 
 .logo-container > img:first-child {
@@ -636,87 +637,28 @@ body {
 }
 
 .logo-container > img {
-  height: 15%;
-  width: 15%;
-}
-@media screen and (min-width: 768px) {
-  .logo-container > img {
-    width: 5%;
-    height: 5%;
-  }
+  width: 70px;
+  height: 70px;
 }
 
 .gallery-container {
   margin: 0;
   display: grid;
-  place-content: center;
+  grid-area: gallery;
 }
 
-.dropbtn3 {
-  background-color: #4caf50;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown3 {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content3 {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 10000;
-}
-
-/* Links inside the dropdown */
-.dropdown-content3 a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content3 a:hover {
-  background-color: #f1f1f1;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown3:hover .dropdown-content3 {
-  /* display: block; */
-  /* height: 700px; */
-  background-color: red;
-  position: relatiue;
-  /* position: relative; */
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown3:hover .dropbtn3 {
-  background-color: #3e8e41;
-}
-
-@media screen and (max-width: 600px) {
-  .dropdown3 {
-    display: none;
-  }
-}
-@media screen and (min-width: 600px) {
-  .dropdown2 {
-    display: none;
-  }
-}
 .fa-house {
   font-family: fontawesome;
+}
+
+main {
+  display: grid;
+  grid-template-areas: ". ." "title logo" "gallery gallery";
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+h1 {
+  grid-area: title;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
