@@ -557,11 +557,14 @@ main {
 
 footer {
   grid-area: footer;
+  color: white;
+  background-color: #000;
+  height: 5rem;
 }
 
 body {
   display: grid;
-  grid-template-areas: " navbar " "main " "footer ";
+  grid-template-areas: " navbar " "main " "footer";
   grid-template-rows: auto 1fr auto;
   height: 100vh;
   row-gap: 20px;
@@ -571,7 +574,7 @@ body {
 }
 @media screen and (min-width: 1024px) {
   body {
-    grid-template-areas: " . navbar ." "  . main .  " ". footer . ";
+    grid-template-areas: " . navbar ." "  . main .  " "footer footer footer ";
     grid-template-columns: auto 1240px auto;
     padding: 0;
   }
@@ -630,7 +633,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
 }
 
 .logo-container > img:first-child {
