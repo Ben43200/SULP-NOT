@@ -579,9 +579,8 @@ body {
   display: grid;
   overflow: hidden;
   width: 380px;
-  padding-top: 20px;
+  padding-top: 90px;
   place-self: center;
-  -webkit-mask: linear-gradient(90deg, rgba(0, 0, 0, 0), #000 10% 90%, rgba(0, 0, 0, 0));
 }
 @media screen and (min-width: 768px) {
   .gallery {
